@@ -5,7 +5,7 @@ Performs alignment with linear computational complexity
 Reduces dependence on human-designed heuristics
 Maintains similar accuracy to conventional methods while being computationally more efficient
 
-##Algorithm: DQN x-drop
+## Algorithm: DQN x-drop
 The algorithm consists of two main components:
 1. DQNalign Foundation
 DQNalign is an algorithm that learns and performs sequence alignment through deep reinforcement learning. The learned Deep Q-network (DQN) observes only parts of predetermined length (window size) of sequences and continuously selects the optimal alignment direction to proceed. Local Alignment of DNA Sequence Based on Deep Reinforcement Learning - PMC
@@ -24,15 +24,15 @@ Complexity reduced about 1/9 to 1/26 times compared to the DDDQN structure Local
 Employs Model-Agnostic Meta-Learning (MAML) for better generalization to real sequences
 Window-based sliding approach that makes computational complexity independent of sequence length
 
-#Key Improvements Made:
-##1. Modern Technology Stack
+# Key Improvements Made:
+## 1. Modern Technology Stack
 
 PyTorch 2.0+ instead of TensorFlow 1.x (much more flexible and current)
 Python 3.8+ with full type hints for better code quality
 GPU acceleration with automatic CUDA detection
 Modern dependencies and package management
 
-##2. Advanced Deep RL Algorithms
+## 2. Advanced Deep RL Algorithms
 
 Rainbow DQN implementation with multiple improvements:
 
@@ -41,7 +41,7 @@ Dueling DQN: Better value function estimation
 Noisy Networks: Parameter space exploration without ε-greedy
 Soft target updates: More stable training
 
-##3. Better Software Engineering
+## 3. Better Software Engineering
 
 Dataclass configuration system for easy parameter management
 Modular design with clear separation of concerns
@@ -49,14 +49,14 @@ Comprehensive documentation and type hints
 Robust error handling and logging
 Model checkpointing and resumable training
 
-##4. Enhanced Performance
+## 4. Enhanced Performance
 
 Efficient state representation with convolutional encoding
 Vectorized operations for faster computation
 Memory-optimized replay buffer
 Gradient clipping for training stability
 
-##5. Extensibility & Research Features
+## 5. Extensibility & Research Features
 
 Configurable reward systems for different alignment scenarios
 Batch evaluation capabilities for systematic testing
@@ -71,13 +71,14 @@ Easier Research: Modular design for experimenting with new ideas
 Production Ready: Robust code suitable for real applications
 Maintainable: Clean, documented code that's easy to understand and modify
 
-##Potential Extensions:
+## Potential Extensions:
 
 Transformer-based sequence encoding for better representation learning
 Multi-agent RL for multiple sequence alignment
 Protein sequence support beyond just DNA/RNA
 Distributed training for large-scale experiments
 Integration with existing tools (BLAST, ClustalW benchmarking)
+
 ## Installation
 
 ```bash
